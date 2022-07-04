@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Информация профиля {{ init_profile.username }}
+    </h1>
+    <a href="/users/profile/{{ init_profile.id }}/edit">
+        Изменить данные профиля
+    </a>
+    <p>
+        Имя: {{ init_profile.first_name }}
+    </p>
+    <p>
+        Фамилия: {{ init_profile.last_name }}
+    </p>
+    <p>
+        О себе: {{ profile.about_me }}
+    </p>
+    <a href="/">
+        На главную
+    </a>
+</body>
+</html>

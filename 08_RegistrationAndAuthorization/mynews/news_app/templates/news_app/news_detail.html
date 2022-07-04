@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Detail</title>
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/news_detail/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="/news_list" class="nav-item__logo">
+                    MyNews
+                </a>
+                <button class="nav-item__postbutton">
+                    <a href="/news_list/create">
+                        Новая запись
+                    </a>
+                </button>
+            </div>
+            <div class="nav-item header__nav-login">
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__login logout">
+                    <a href="{% url 'logout' %}" class="nav-item__login-link"></a>
+                </button>
+                {% else %}
+                <button class="nav-item__login">
+                    <a href="{% url 'login' %}" class="nav-item__login-link"></a>
+                </button>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="post-details main__container-post-details">
+                <div class="post-details__category">
+                    <img src="/media/{{ category.logo }}" alt="" class="post-details__category-img">
+                    <p class="post-details__category-p">
+                        {{ news_detail.category }}
+                    </p>
+                </div>
+                <div class="post-details__author">
+                    {{ news_detail.author.user_nick }}
+                </div>
+                <div class="post-details__date">
+                    {{ date_created|date:"d M Y" }}
+                </div>
+            </div>
+            <h1 class="main__container-header">
+                {{ news_detail.title }}
+            </h1>
+            <div class="about-post main__container-aboutpost">
+                <div class="reactions about-post__reactions">
+                    <div class="reactions__comments">
+                        <p class="reactions__comments-p">
+                            {{ comments_count }}
+                        </p>
+                    </div>
+                    <div class="reactions__views">
+                        <p class="reactions__views-p">
+                            {{ news_detail.views_count }}
+                        </p>
+                    </div>
+                </div>
+                {% if has_perm_to_change is True %}
+                <div class="about-post__update">
+                    <button class="about-post__update-btn">
+                        <a href="/news_detail/{{ news_detail.id }}/update">
+                            Изменить запись
+                        </a>
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+            <p class="main__container-p">
+                {{ news_detail.text }}
+            </p>
+            <div class="comments main__container-comments">
+                <h1 class="comments_header">
+                    Комментарии
+                </h1>
+                <div class="comments__block">
+                    <div class="comment-form comments__block-write">
+                        <form method="POST" action="/news_detail/{{ news_detail.id }}">
+                            {% comment %} {% csrf_token %}
+                            {% for field in comment_form %}
+                            <div class="comment-form__label">
+                                {{ field.label_tag }}
+                            </div>
+                            <div class="comment-form__input">
+                                {{ field }}
+                            </div>
+                            {% endfor %} {% endcomment %}
+
+                            {% csrf_token %}
+                            {% if user.is_authenticated %}
+                            <input type="hidden" name="{{ comment_form.user.name }}" id="{{ comment_form.user.id_for_label }}" value="{{ user }}" readonly>
+                            {% else %}
+                            <div class="comment-form__label">
+                                {{ comment_form.nickname.label_tag }}
+                            </div>
+                            <div class="comment-form__input">
+                                {{ comment_form.nickname }}
+                            </div>
+                            {% endif %}
+
+                            <div class="comment-form__label">
+                                {{ comment_form.comment.label_tag }}
+                            </div>
+                            <div class="comment-form__input">
+                                {{ comment_form.comment }}
+                            </div>
+                            <button type="submit" class="form__submit-button">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                    <div class="comments__block-read">
+                        <ul class="comments__list">
+                            {% if comments %}
+                            <li class="comment comments__list-comment">
+                                {% for comment in comments %}
+                                <div class="comment__author">
+                                    {% if comment.user is not null %}
+                                    {{ comment.user }}
+                                    {% else %}
+                                    {{ comment.nickname }} (Anonymous)
+                                    {% endif %}
+                                </div>
+                                <p class="comment__text">
+                                    {{ comment.comment }}
+                                </p>
+                                {% endfor %}
+                                {% else %}
+                                    Комментариев нет
+                            </li>
+                            {% endif%}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

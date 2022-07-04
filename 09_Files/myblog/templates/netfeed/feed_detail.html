@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'netfeed/css/detail/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="/feeds/list" class="nav-item__logo">
+                    Myfeeds
+                </a>
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__postbutton">
+                    <a href="/feeds/create">
+                        Новая запись
+                    </a>
+                </button>
+                {% endif %}
+            </div>
+            <div class="nav-item header__nav-login">
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__login logout">
+                    <a href="{% url 'logout' %}" class="nav-item__login-link"></a>
+                </button>
+                {% else %}
+                <button class="nav-item__login">
+                    <a href="{% url 'login' %}" class="nav-item__login-link"></a>
+                </button>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="post-details main__container-post-details">
+                <div class="post-details__author">
+                    <img src="/media/{{ feed_detail.author.avatar }}" alt="Фото профиля" class="post-details__author-avatar">
+                    {{ feed_detail.author.user_login }}
+                </div>
+                <div class="post-details__date">
+                    {{ feed_detail.date_created|date:"d M Y" }}
+                </div>
+            </div>
+            <h1 class="main__container-header">
+                {{ feed_detail.title }}
+            </h1>
+            <p class="main__container-p">
+                {{ feed_detail.text }}
+            </p>
+            <div class="main__container-img image">
+                {% for image in images %}
+                <img src="/media/{{ image.file }}" alt="" class="image__img">
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

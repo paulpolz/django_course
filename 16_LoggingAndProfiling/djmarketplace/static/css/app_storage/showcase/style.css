@@ -1,0 +1,25 @@
+.main__showcase {
+    margin: 30px 60px; 
+}
+
+.showcase_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.showcase_list__item {
+    margin: 6px;
+    padding: 6px 8px;
+
+    border: 2px solid;
+    border-radius: 4px;
+
+    color: rgb(68, 65, 65);
+}
+
+.showcase_list__item-goodname {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 120%;
+}
+

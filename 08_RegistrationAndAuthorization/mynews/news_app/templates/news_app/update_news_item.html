@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create News</title>
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/update_news_item/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="/news_detail/{{ pk }}" class="nav-item__logo">
+                    MyNews
+                </a>
+                <button class="nav-item__postbutton">
+                    <a href="/news_list/create">
+                        Новая запись
+                    </a>
+                </button>
+            </div>
+            <div class="nav-item header__nav-login">
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__login logout">
+                    <a href="{% url 'logout' %}" class="nav-item__login-link"></a>
+                </button>
+                {% else %}
+                <button class="nav-item__login">
+                    <a href="{% url 'login' %}" class="nav-item__login-link"></a>
+                </button>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__header">
+            Изменить запись {{ pk }}
+        </h1>
+        <form method="POST" action="/news_detail/{{ pk }}/update">
+            {% csrf_token %}
+            <div class="form__label">
+                {{ news_item.title.label_tag }}
+            </div>
+            <div class="form__input">
+                {{ news_item.title }}
+            </div>
+            <div class="form__label">
+                {{ news_item.category.label_tag }}
+            </div>
+            <div class="form__input">
+                {{ news_item.category }}
+            </div>
+            <div class="form__label">
+                {{ news_item.text.label_tag }}
+            </div>
+            <div class="form__input">
+                {{ news_item.text }}
+            </div>
+            {% if is_moderator is True %}
+            <div class="form__label">
+                {{ news_item.is_active.label_tag }}
+            </div>
+            <div class="form__input">
+                {{ news_item.is_active }}
+            </div>
+            {% else %}
+            {% endif %}
+            <button type="submit" class="form__submit-button">
+                Отправить
+            </button>
+        </form>
+    </main>
+</body>
+</html>

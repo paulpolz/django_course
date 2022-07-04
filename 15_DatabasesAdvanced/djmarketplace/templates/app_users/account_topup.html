@@ -1,0 +1,32 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+{% endblock %}
+{% block title %}
+<title>Top Up your balance</title>
+{% endblock %}
+</head>
+{% block main %}
+<main>
+    <h2>
+        Your account status is {{ bonus_account.status }}
+    </h2>
+    <p>
+        Now you have {{ bonus_account.balance }} bonuses on Your account
+    </p>
+    <form method="POST" action="" class="form main__form">
+        {% csrf_token %}
+        {% for field in bonus_balance_update_form %}
+        <div class="form__label">
+            {{ field.label }}
+        </div>
+        <div class="form__input">
+            {{ field }}
+        </div>
+        {% endfor %}
+        <button type="submit" class="form__submit-button">
+            Отправить
+        </button>
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends '../header.html' %}
+{% load static %}
+
+<title>{% block title %}Login{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/users/login/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    <div class="main__container container">
+        <h2 class="container__header">
+            Страница входа
+        </h2>
+        <form method="post" class="container__form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="container__form-btn">
+                <button type="submit" class="form-btn">
+                    Login
+                </button>
+                <p class="form-btn">
+                    <a href="/users/register">Зарегистрироваться</a>
+                </p>
+            <div>
+        </form>
+    </div>
+</main>
+{% endblock %}

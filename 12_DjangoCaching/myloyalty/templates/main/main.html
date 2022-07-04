@@ -1,0 +1,26 @@
+{% extends '../header/header.html' %}
+{% load i18n %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/main/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>{% trans 'Main'%}</title>
+{% endblock %}
+{% block main %}
+<main class="main">
+    <div class="main__block">
+        <div class="block block__account">
+            <a href="/account" class="block__account-a">
+                {% trans 'Go to Your Account' %}
+            </a>
+        </div>
+        <div class="block block__stores">
+            <a href="/stores" class="block__stores-a">
+                {% trans 'Go to List of Stores' %}
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}

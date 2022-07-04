@@ -1,0 +1,60 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/app_storage/good/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>Good №{{good.good_id }}</title>
+{% endblock %}
+</head>
+{% block main %}
+<main class="main">
+    <div class="main__card good">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        <div class="good__main-info">
+            <div class="good__main-info_name">
+                {{ good.good }}
+            </div>
+            <div class="good__main-info_store">
+                Store: {{ good.store }}
+            </div>
+        </div>
+        <div class="good__main-description">
+            <p>
+                Description
+            </p>
+            <p>
+                {{ good.good.description }}
+            </p>
+        </div>
+        <div class="good__main-params">
+            <p>
+                Price: {{ good.price }} $
+            </p>
+            <p>
+                Stock: {{ good.stock }} pcs.
+            </p>
+            <p>
+                Weight: {{ good.good.weight }} kg.
+            </p>
+        </div>
+        <div class="good__main-addcart">
+            <form method="POST" action="" class="form">
+                {% csrf_token %}
+                {% for field in cartadd_stock_form %}
+                <div class="form__input">
+                    {{ field }}
+                </div>
+                {% endfor %}
+                <button type="submit" class="form__submit-button">
+                    Add to Cart
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

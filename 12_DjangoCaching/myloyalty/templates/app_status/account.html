@@ -1,0 +1,81 @@
+{% extends '../header/header.html' %}
+{% load i18n %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/app_status/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>{% trans 'Loyalty Status' %}</title>
+{% endblock %}
+{% block main %}
+<main class="main">
+    <div class="main__ver1">
+        <div class="main__ver1-status status">
+            <div class="status__block">
+                <div class="status__block-profile profile">
+                    <div class="profile__avatar"></div>
+                    <div class="profile__name">
+                        <p class="profile__name-first">
+                            {{ user.first_name }}
+                        </p>
+                        <p class="profile__name-last">
+                            {{ user.last_name }}
+                        </p>
+                    </div>
+                </div>
+                <div class="status__block-bonus bonus">
+                    <p class="bonus__block">
+                        {{ balance }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__ver2">
+        <h3 class="main__ver2-header header__offers">
+            {% trans 'Special Offers'%}
+        </h3>
+        <div class="main__ver2-offers offers">
+            <ul class="offers__list">
+                {% for offer in special_offers %}
+                <li class="offers__list-item">
+                    {{ offer }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <h3 class="main__ver2-header header__promo">
+            {% trans 'Promo Events'%}
+        </h3>
+        <div class="main__ver2-promo promo">
+            <ul class="promo__list">
+                {% for promo in promo_events %}
+                <li class="promo__list-item">
+                    {{ promo }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="main__ver3">
+        <div class="main__v3-purchases purchases">
+            <h3 class="main__v3-header">
+                {% trans 'Purchases History'%}
+            </h3>
+            <ul class="purchases__list">
+                {% for purchase in purchases %}
+                <li class="purchases__list-item purchase">
+                    <div class="purchase__created_at">
+                        {{ purchase.created_at|date:'h:i M d, Y' }}
+                    </div>
+                    <div class="purchase__item">
+                        {{ purchase.item }}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</main>
+{% endblock %}

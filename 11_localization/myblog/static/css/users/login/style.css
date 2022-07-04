@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__container {
+    align-items: flex-start;
+}
+
+.container__header {
+    font-family: "Graphic", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(68, 65, 65)
+}
+
+.container__form-btn {
+    display: flex;
+}
+
+.form-btn {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 15px;
+
+    border: 0.5px solid rgb(161, 161, 161);
+    border-radius: 6px;
+    background-color: white;
+
+    font-size: 14px;
+    color: rgb(68, 65, 65)
+}
+
+.form-btn:active {
+    background-color:#eeeeee;
+    box-shadow: 0 0 3px 1px rgb(251, 255, 196);
+}

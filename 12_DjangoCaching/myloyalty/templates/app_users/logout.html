@@ -1,0 +1,20 @@
+{% extends '../header/header.html' %}
+{% load i18n %}
+{% block title %}
+<title>{% trans 'Logout'%}</title>
+{% endblock %}
+{% block main %}
+<main class="main">
+    <h2 class="main_header">
+        {% trans 'Sign Out'%}
+    </h2>
+    <p>
+        {% trans 'You were signed out successfully'%}
+    </p>
+    <div class="main__to-feeds">
+        <a href="/">
+            {% trans 'Go To Main Page'%}
+        </a>
+    </div>
+</main>
+{% endblock %}

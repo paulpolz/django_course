@@ -1,0 +1,25 @@
+<html>
+    <ul>
+        {% for ad in advertisements %}
+        <li>
+            {{ ad }}
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>
+        Создать новое объявление
+    </h2>
+    <form action="http://127.0.0.1:8000/advertisements/" method="POST">
+        {% csrf_token %}
+        <div>
+          <input type="text" placeholder="Репетитор">
+        </div>
+        <button type="submit">
+          Создать
+        </button>
+    </form>
+
+    <p>
+        Создано новых объявлений: {{ counter }}
+    </p>
+</html>

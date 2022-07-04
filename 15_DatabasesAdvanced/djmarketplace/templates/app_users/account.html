@@ -1,0 +1,55 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+{% endblock %}
+{% block title %}
+<title>Account</title>
+{% endblock %}
+</head>
+{% block main %}
+<main>
+    <h2>
+        Welcome to Your account, {{ request.user.username }}!
+    </h2>
+    <h3>
+        Orders list
+    </h3>
+    {% if orders_list %}
+    <ul>
+        {% for order in orders_list %}
+        <li>
+            {{ order.order_id }}
+            {{ order.status }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    You have no Orders
+    {% endif %}
+    <h3>
+        <a href="/cart">
+            Your Cart
+        </a>
+    </h3>
+    {% if cart_list %}
+    <ul>
+        {% for good in cart_list %}
+        <li>
+            {{ good.article }} - 
+            {{ good.quantity }} pcs.
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    You have no Goods in Cart
+    {% endif %}
+    <h3>
+        Your Bonuses
+    </h3>
+    Your Status is {{ bonus_account.status }} <br>
+    You have {{ bonus_account.balance }} bonuses <br>
+    <a href="/account_topup">
+        Top up Your Account
+    </a>
+</main>
+{% endblock %}

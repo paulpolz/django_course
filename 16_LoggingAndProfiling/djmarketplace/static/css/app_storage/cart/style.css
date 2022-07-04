@@ -1,0 +1,41 @@
+.main__cart {
+    margin: 40px 80px;
+}
+
+.item__table-cols th {
+    padding-right: 50px;
+    padding-bottom: 6px;
+}
+
+.item__table-rows td {
+    padding-bottom: 18px;
+}
+
+.cart__total {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cart__total-form {
+    margin-left: 40px;
+}
+
+.form__submit {
+    padding: 10px;
+    max-width: 100px;
+
+    background: rgba(37, 220, 223, 0.74);
+    box-shadow: 0 1px 5px rgb(159, 197, 197);
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form__submit:hover {
+    color: rgb(198, 255, 255);
+}
+
+.form__submit:active {
+    box-shadow: none;
+}

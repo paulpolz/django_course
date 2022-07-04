@@ -1,0 +1,62 @@
+body {
+    font-family: "Graphic", sans-serif;
+    background-color: #3d3bff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+
+    border: #FAF1E6 solid 1px;
+    border-radius: 22px;
+    background-color: #FAF1E6;
+}
+
+.container__main {
+    margin-top: 200px;
+    margin-left: 40px;
+}
+
+.main__backward_ref {
+    padding-left: 20px;
+    background: url("../../img/advertisement_detail_01/arrow.png") no-repeat left;
+    background-size: 12px;
+}
+
+.main__header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 500px;
+
+    color: black;
+}
+
+.main__price {
+    display: inline-block;
+    vertical-align: top;
+
+    border: gold solid 1px;
+    border-radius: 20px;
+    background: url("../../img/advertisement_detail_01/price-tag.png") no-repeat 10px center;
+    background-size: 30px;
+    background-color: gold;
+}
+
+.main__price-p {
+    padding: 1px 60px;
+
+    font-weight: bold;
+    font-size: 18px;
+    color: #0D2A6D;
+}
+
+.container__img {
+    height: 650px;
+    width: 650px;   
+}

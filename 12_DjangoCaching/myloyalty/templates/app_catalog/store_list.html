@@ -1,0 +1,34 @@
+{% extends '../header/header.html' %}
+{% load i18n %}
+{% load static %}
+{% load cache %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/app_catalog/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>{% trans 'Stores'%}</title>
+{% endblock %}
+{% block main %}
+<main class="main">
+    <div class="main__stores">
+        <h3 class="main__stores-h">
+            {% trans 'List of Stores'%}
+        </h3>
+        {% cache 1000 store_list %}
+        <ul class="main__stores-list stores-list">
+            {% for store in store_list %}
+            <li class="stores-list__item list-item">
+                <div class="list-item__name">
+                    {{ store.name }}
+                </div>
+                <div class="list-item__city">
+                    {{ store.city }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endcache %}
+    </div>
+</main>
+{% endblock %}

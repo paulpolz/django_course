@@ -1,0 +1,35 @@
+{% extends '../header.html' %}
+{% load static %}
+
+<title>{% block title %}Feed{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/netfeed/detail/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    <div class="main__container">
+        <div class="post-details main__container-post-details">
+            <div class="post-details__author">
+                <img src="/media/{{ feed_detail.author.avatar }}" alt="Фото профиля" class="post-details__author-avatar">
+                {{ feed_detail.author.user_login }}
+            </div>
+            <div class="post-details__date">
+                {{ feed_detail.date_created|date:"d M Y" }}
+            </div>
+        </div>
+        <h1 class="main__container-header">
+            {{ feed_detail.title }}
+        </h1>
+        <p class="main__container-p">
+            {{ feed_detail.text }}
+        </p>
+        <div class="main__container-img image">
+            {% for image in images %}
+            <img src="/media/{{ image.file }}" alt="" class="image__img">
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}

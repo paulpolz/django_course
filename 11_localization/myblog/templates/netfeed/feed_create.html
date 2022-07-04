@@ -1,0 +1,45 @@
+{% extends '../header.html' %}
+{% load static %}
+
+<title>{% block title %}Create Feed{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/netfeed/create/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    {% if request.user.is_authenticated %}
+    <h1 class="main__header">
+        Создайте Вашу новую запись
+    </h1>
+    <div class="main__upload-button">
+        <a href="/feeds/create_file">
+            Загрузить несколько записей одним файлом
+        </a>
+    </div>
+    <form method="POST" action="" class="form main__form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% for field in feed %}
+        <div class="form__label">
+            {{ field.label_tag }}
+        </div>
+        <div class="form__input">
+            {{ field }}
+        </div>
+        {% endfor %}
+        <div class="form__label">
+            {{ image.file }}
+        </div>
+        
+        <button type="submit" class="form__submit-button">
+            Отправить
+        </button>
+    </form>
+    {% else %}
+    <p>
+        Чтобы создавать записи, необходимо зарегистрироваться
+    </p>
+    {% endif %}
+</main>
+{% endblock %}

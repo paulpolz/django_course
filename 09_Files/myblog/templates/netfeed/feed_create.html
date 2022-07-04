@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Feed</title>
+    <link rel="stylesheet" href="{% static 'netfeed/css/create/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="/feeds/list" class="nav-item__logo">
+                    Myfeed
+                </a>
+                <button class="nav-item__postbutton">
+                    <a href="/feeds/create">
+                        Новая запись
+                    </a>
+                </button>
+            </div>
+            <div class="nav-item header__nav-login">
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__login logout">
+                    <a href="{% url 'logout' %}" class="nav-item__login-link"></a>
+                </button>
+                {% else %}
+                <button class="nav-item__login">
+                    <a href="{% url 'login' %}" class="nav-item__login-link"></a>
+                </button>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        {% if request.user.is_authenticated %}
+        <h1 class="main__header">
+            Создайте Вашу новую запись
+        </h1>
+        <div class="main__upload-button">
+            <a href="/feeds/create_file">
+                Загрузить несколько записей одним файлом
+            </a>
+        </div>
+        <form method="POST" action="" class="form main__form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in feed %}
+            <div class="form__label">
+                {{ field.label_tag }}
+            </div>
+            <div class="form__input">
+                {{ field }}
+            </div>
+            {% endfor %}
+            <div class="form__label">
+                {{ image.file }}
+            </div>
+            
+            <button type="submit" class="form__submit-button">
+                Отправить
+            </button>
+        </form>
+        {% else %}
+        <p>
+            Чтобы создавать записи, необходимо зарегистрироваться
+        </p>
+        {% endif %}
+    </main>
+</body>
+</html>

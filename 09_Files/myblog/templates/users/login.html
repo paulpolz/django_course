@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'users/css/login/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="/" class="nav-item__logo">
+                    Myfeeds
+                </a>
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__postbutton">
+                    <a href="/feeds/create">
+                        Новая запись
+                    </a>
+                </button>
+                {% endif %}
+            </div>
+            <div class="nav-item header__nav-login">
+                <button class="nav-item__login">
+                    <a href="/users/login" class="nav-item__login-link"></a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Страница входа
+        </h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            <button type="submit">
+                Login
+            </button>
+        </form>
+    </main>
+</body>
+</html>

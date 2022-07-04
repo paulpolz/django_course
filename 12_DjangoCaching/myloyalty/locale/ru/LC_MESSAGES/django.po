@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 14:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: app_catalog/apps.py:8
+msgid "catalog"
+msgstr "каталог"
+
+#: app_catalog/models.py:8 app_status/models.py:22
+msgid "Store Name"
+msgstr "Название магазина"
+
+#: app_catalog/models.py:11 app_users/forms.py:18 app_users/models.py:12
+msgid "City"
+msgstr "Город"
+
+#: app_catalog/models.py:12
+msgid "Street"
+msgstr "Улица"
+
+#: app_catalog/models.py:13
+msgid "Building"
+msgstr "Дом"
+
+#: app_catalog/models.py:14
+msgid "Office"
+msgstr "Офис"
+
+#: app_catalog/models.py:15
+msgid "Additional Information"
+msgstr "Дополнительная информация"
+
+#: app_catalog/models.py:21 templates/app_catalog/store_list.html:10
+msgid "Stores"
+msgstr "Магазины"
+
+#: app_catalog/models.py:22 app_catalog/models.py:42
+msgid "Store"
+msgstr "Магазин"
+
+#: app_catalog/models.py:27
+msgid "Category Name"
+msgstr "Название категории"
+
+#: app_catalog/models.py:35
+msgid "Categories"
+msgstr "Категории"
+
+#: app_catalog/models.py:36 app_catalog/models.py:43
+msgid "Category"
+msgstr "Категория"
+
+#: app_catalog/models.py:41
+msgid "Item Title"
+msgstr "Название товара"
+
+#: app_catalog/models.py:46
+msgid "Item Price"
+msgstr "Цена товара"
+
+#: app_catalog/models.py:47
+msgid "Item Description"
+msgstr "Описание товара"
+
+#: app_catalog/models.py:53
+msgid "Items"
+msgstr "Товары"
+
+#: app_catalog/models.py:54
+msgid "Item"
+msgstr "Товар"
+
+#: app_status/apps.py:8
+msgid "loyalty"
+msgstr "лояльность"
+
+#: app_status/models.py:11
+msgid "Bonus Balance"
+msgstr "Бонусный баланс"
+
+#: app_status/models.py:14
+msgid "Bonuses"
+msgstr "Бонусы"
+
+#: app_status/models.py:15
+msgid "Bonus"
+msgstr "Бонус"
+
+#: app_status/models.py:20
+msgid "Offer Title"
+msgstr "Заголовок акции"
+
+#: app_status/models.py:21
+msgid "Offer Subtitle"
+msgstr "Подзаголовок акции"
+
+#: app_status/models.py:25
+msgid "Is it a special offer?"
+msgstr "Это спецпредложение?"
+
+#: app_status/models.py:26
+msgid "Is it a promo event?"
+msgstr "Это промо акции?"
+
+#: app_status/models.py:32
+msgid "Offers"
+msgstr "Акции"
+
+#: app_status/models.py:33
+msgid "Offer"
+msgstr "Акция"
+
+#: app_status/models.py:45
+msgid "Name of used offer"
+msgstr "Название использованной акции"
+
+#: app_status/models.py:46
+msgid "Amount of used bonuses"
+msgstr "Сумма потраченных бонусов"
+
+#: app_status/models.py:49
+msgid "Purchases"
+msgstr "Покупки"
+
+#: app_status/models.py:50
+msgid "Purchase"
+msgstr "Покупка"
+
+#: app_users/apps.py:8
+msgid "users"
+msgstr "пользователи"
+
+#: app_users/forms.py:14
+msgid "First Name"
+msgstr "Имя"
+
+#: app_users/forms.py:15
+msgid "Second Name"
+msgstr "Фамилия"
+
+#: app_users/forms.py:16 app_users/models.py:10
+msgid "Date of Birth"
+msgstr "Дата рождения"
+
+#: app_users/forms.py:17
+msgid "Email"
+msgstr "Email"
+
+#: app_users/forms.py:19 app_users/models.py:11
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: app_users/models.py:9
+msgid "User Login"
+msgstr "Логин пользователя"
+
+#: app_users/models.py:15
+msgid "Profiles"
+msgstr "Профили"
+
+#: app_users/models.py:16
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/app_catalog/store_list.html:16
+msgid "List of Stores"
+msgstr "Список магазинов"
+
+#: templates/app_status/account.html:9
+msgid "Loyalty Status"
+msgstr "Статус лояльности"
+
+#: templates/app_status/account.html:37
+msgid "Special Offers"
+msgstr "Спец предложение"
+
+#: templates/app_status/account.html:49
+msgid "Promo Events"
+msgstr "Промо акция"
+
+#: templates/app_status/account.html:64
+msgid "Purchases History"
+msgstr "История покупок"
+
+#: templates/app_users/login.html:4
+msgid "Login"
+msgstr "Авторизация"
+
+#: templates/app_users/login.html:10 templates/app_users/login.html:17
+msgid "Sign In"
+msgstr "Войти"
+
+#: templates/app_users/login.html:20 templates/app_users/register.html:8
+#: templates/app_users/register.html:14 templates/app_users/register.html:21
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: templates/app_users/logout.html:4
+msgid "Logout"
+msgstr "Выход из личного кабинета"
+
+#: templates/app_users/logout.html:9
+msgid "Sign Out"
+msgstr "Выход из личного кабинета"
+
+#: templates/app_users/logout.html:12
+msgid "You were signed out successfully"
+msgstr "Вы успешно вышли из личного кабинета"
+
+#: templates/app_users/logout.html:16
+msgid "Go To Main Page"
+msgstr "Перейти на главную страницу"
+
+#: templates/header/header.html:13
+msgid "Account"
+msgstr "Аккаунт программы лояльности"
+
+#: templates/header/header.html:19
+msgid "My Loyalty"
+msgstr "My Loyalty"
+
+#: templates/main/main.html:9
+msgid "Main"
+msgstr "Главная"
+
+#: templates/main/main.html:16
+msgid "Go to Your Account"
+msgstr "Перейти к Лицевому счету"
+
+#: templates/main/main.html:21
+msgid "Go to List of Stores"
+msgstr "Перейти к списку магазинов"

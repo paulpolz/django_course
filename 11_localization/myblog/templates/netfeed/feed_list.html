@@ -1,0 +1,35 @@
+{% extends '../header.html' %}
+{% load static %}
+
+<title>{% block title %}Feeds{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/netfeed/list/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    <h1 class="main__header">
+        Лента
+    </h1>
+    {% if feeds_list %}
+    <ul class="main__feeds-list">
+        {% for item in feeds_list %}
+        <li class="item main__feeds-list-item">
+            <a href="/feeds/detail/{{item.id}}">
+                <div class="item__params">
+                    {{ item.author.user_login }}
+                </div>
+                <h3 class="item__header">
+                    {{ item.title }}
+                </h3>
+                <p class="item__text">
+                    {{ item.text|truncatechars:100 }}
+                </p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif%}
+</main>
+{% endblock %}

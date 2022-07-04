@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-03 13:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_netfeed/apps.py:8 app_netfeed/models.py:13
+msgid "новости"
+msgstr "feeds"
+
+#: app_netfeed/models.py:6
+msgid "Заголовок поста"
+msgstr "Title"
+
+#: app_netfeed/models.py:7
+msgid "Автор поста"
+msgstr "Author"
+
+#: app_netfeed/models.py:8
+msgid "Основной текст"
+msgstr "Text"
+
+#: app_netfeed/models.py:14
+msgid "новость"
+msgstr "feed"
+
+#: app_users/apps.py:8
+msgid "пользователи"
+msgstr "users"
+
+#: app_users/models.py:9
+msgid "Логин пользователя"
+msgstr "User Login"
+
+#: app_users/models.py:10
+msgid "Номер телефона"
+msgstr "Phone Number"
+
+#: app_users/models.py:11
+msgid "Город"
+msgstr "City"
+
+#: app_users/models.py:12
+msgid "О себе"
+msgstr "About"
+
+#: app_users/models.py:13
+msgid "Фото профиля"
+msgstr "Profile photo"
+
+#: app_users/models.py:16
+msgid "профили"
+msgstr "profiles"
+
+#: app_users/models.py:17
+msgid "профиль"
+msgstr "profile"
+
+#: templates/main/main.html:5 templates/main/main.html:14
+msgid "Главная страница"
+msgstr "Main page"
+
+#: templates/main/main.html:18
+msgid "Добро пожаловать"
+msgstr "Your are welcome"
+
+#: templates/main/main.html:22
+msgid "Вы не авторизованы на сайте"
+msgstr "Your not authorized"
+
+#: templates/main/main.html:26
+msgid "Войти"
+msgstr "Sign In"
+
+#: templates/main/main.html:29
+msgid "Зарегистрироваться"
+msgstr "Sign Up"
+
+#: templates/main/main.html:35
+msgid "К новостям"
+msgstr "Go to feeds"

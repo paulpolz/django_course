@@ -1,0 +1,54 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/app_storage/cart/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>Your cart</title>
+{% endblock %}
+</head>
+{% block main %}
+<main class="main">
+    <div class="main__cart cart">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        <table class="item__table">
+            <tr class="item__table-cols">
+                <th>Good Name</th>
+                <th>Store Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sum price</th>
+            </tr>
+            {% for item in cart %}
+            <tr class="item__table-rows">
+                <td>{{ item.article.good }}</td>
+                <td>{{ item.article.store }}</td>
+                <td>{{ item.quantity }} pcs.</td>
+                <td>{{ item.article.price }}$</td>
+                <td>{{ item.sum_price }}$</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="cart__total">
+            <p class="cart__total-p">
+                Total: {{ cart_total_sum }}$
+            </p>
+            <form method="POST" action="" class="cart__total-form form">
+                {% csrf_token %}
+                {% for field in create_order_button_form %}
+                <div class="form__input">
+                    {{ field }}
+                </div>
+                {% endfor %}
+                <button type="submit" class="form__submit">
+                    Create order
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

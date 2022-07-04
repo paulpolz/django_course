@@ -1,0 +1,36 @@
+{% extends '../header.html' %}
+{% load static %}
+
+<title>{% block title %}Edit your profile{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/users/profile_edit/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    <h1 class="main__header">
+        Изменить данные профиля {{ init_profile.username }}
+    </h1>
+    <div class="main__form">
+        <form method="POST" action="/users/profile/{{ pk }}/edit">
+            <div class="main__form-form1">
+                {% csrf_token %}
+                {% for field in edit_form %}
+                {{ field.label_tag }}
+                {{ field }}
+                {% endfor %}
+            </div>
+            <div class="main__form-form2">
+                {% for field in edit_init_form %}
+                {{ field.label_tag }}
+                {{ field }}
+                {% endfor %}
+            </div>
+            <button type="submit" class="main__form-submit-button">
+                Сохранить
+            </button>
+        </form>
+    </div>
+</main>
+{% endblock %}

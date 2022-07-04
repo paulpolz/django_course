@@ -1,0 +1,761 @@
+INFO 2022-02-14 05:43:52,968 basehttp 74758 123145367785472 "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 2351
+INFO 2022-02-14 05:43:58,785 basehttp 74758 123145367785472 "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-14 05:44:53,352 basehttp 74806 123145437212672 | "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-14 05:50:52,129 basehttp 74873 123145337442304 log_message "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-14 05:50:56,115 basehttp 74873 123145337442304 log_message "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-14 05:50:56,511 basehttp 74873 123145337442304 log_message "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-14 05:50:57,661 basehttp 74873 123145337442304 log_message "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 2351
+INFO 2022-02-14 05:51:12,110 basehttp 74873 123145337442304 log_message "GET /login/ HTTP/1.1" 200 1729
+INFO/20 2022-02-14 05:52:00,414 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO/20 2022-02-14 05:52:10,323 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO/20 2022-02-14 05:52:10,329 basehttp "GET /account HTTP/1.1" 301 0
+INFO/20 2022-02-14 05:52:10,355 basehttp "GET /account/ HTTP/1.1" 200 1521
+INFO 2022-02-14 06:06:22,778 autoreload Watching for file changes with StatReloader
+INFO 2022-02-14 06:06:22,804 views gefe
+INFO 2022-02-14 06:06:31,822 basehttp "GET /account/ HTTP/1.1" 200 1521
+INFO 2022-02-14 06:06:35,742 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:06:39,013 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:06:43,242 basehttp "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 2500
+INFO 2022-02-14 06:07:05,308 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-14 06:07:07,196 autoreload Watching for file changes with StatReloader
+INFO 2022-02-14 06:07:07,218 views Showcase list of goods was requested
+INFO 2022-02-14 06:07:21,420 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:07:46,795 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:08:30,808 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-14 06:08:32,405 autoreload Watching for file changes with StatReloader
+INFO 2022-02-14 06:08:34,323 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:08:41,444 basehttp "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 2500
+INFO 2022-02-14 06:08:42,910 views CartAdd
+INFO 2022-02-14 06:08:42,920 basehttp "POST /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 302 0
+INFO 2022-02-14 06:08:42,928 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-14 06:08:42,960 basehttp "GET /cart/ HTTP/1.1" 200 2590
+INFO 2022-02-14 06:08:49,950 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-14 06:08:50,704 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 2498
+INFO 2022-02-14 06:09:00,635 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 2498
+INFO 2022-02-14 06:09:01,111 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 2498
+INFO 2022-02-14 06:09:06,628 views CartAdd
+INFO 2022-02-14 06:09:06,636 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 302 0
+INFO 2022-02-14 06:09:06,642 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-14 06:09:06,685 basehttp "GET /cart/ HTTP/1.1" 200 2835
+INFO 2022-02-14 06:09:17,665 basehttp "GET /account/ HTTP/1.1" 200 1726
+INFO 2022-02-14 06:09:18,457 basehttp "GET /logout/ HTTP/1.1" 200 998
+INFO 2022-02-14 06:09:19,476 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-14 06:09:21,827 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-14 06:09:21,850 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-14 06:09:21,903 basehttp "GET /account/ HTTP/1.1" 200 1726
+INFO 2022-02-15 04:26:44,474 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 04:26:46,971 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:26:58,473 basehttp "GET /account/ HTTP/1.1" 200 1726
+INFO 2022-02-15 04:27:03,231 basehttp "GET /account/ HTTP/1.1" 200 1726
+INFO 2022-02-15 04:27:06,461 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:27:06,465 basehttp "GET /static/css/app_storage/showcase/style.css HTTP/1.1" 304 0
+INFO 2022-02-15 04:27:06,468 basehttp "GET /static/css/app_storage/showcase/style.css HTTP/1.1" 304 0
+INFO 2022-02-15 04:27:46,586 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:27:52,333 basehttp "GET /good/21963066-f84b-4151-8ac9-a0461b84c4d0 HTTP/1.1" 301 0
+INFO 2022-02-15 04:27:52,376 basehttp "GET /good/21963066-f84b-4151-8ac9-a0461b84c4d0/ HTTP/1.1" 200 2375
+INFO 2022-02-15 04:27:52,394 basehttp "GET /static/css/app_storage/good/style.css HTTP/1.1" 304 0
+WARNING 2022-02-15 04:27:52,458 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:27:52,459 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:28:06,526 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 04:28:08,145 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:28:10,984 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:28:15,898 basehttp "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 2500
+INFO 2022-02-15 04:28:21,520 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:28:22,253 basehttp "GET /good/0300e79f-0c0b-436e-8668-38a168f82c5e HTTP/1.1" 301 0
+INFO 2022-02-15 04:28:22,273 basehttp "GET /good/0300e79f-0c0b-436e-8668-38a168f82c5e/ HTTP/1.1" 200 2355
+WARNING 2022-02-15 04:28:22,366 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:28:22,367 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:28:38,854 basehttp "GET /good/974602bb-cf60-4846-bd23-00d132876d18 HTTP/1.1" 301 0
+INFO 2022-02-15 04:28:38,873 basehttp "GET /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 200 2365
+WARNING 2022-02-15 04:28:38,965 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:28:38,966 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:28:50,310 views CartAdd
+INFO 2022-02-15 04:28:50,334 basehttp "POST /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:28:50,345 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:28:50,395 basehttp "GET /cart/ HTTP/1.1" 200 3068
+INFO 2022-02-15 04:29:15,477 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 04:29:16,843 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:34:36,251 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 04:34:37,816 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:34:59,868 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:35:00,430 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:35:09,003 basehttp "GET /cart/ HTTP/1.1" 200 3068
+INFO 2022-02-15 04:35:09,226 basehttp "GET /cart/ HTTP/1.1" 200 3068
+INFO 2022-02-15 04:35:09,389 basehttp "GET /cart/ HTTP/1.1" 200 3068
+INFO 2022-02-15 04:35:12,948 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:35:14,104 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 2498
+INFO 2022-02-15 04:35:15,808 views CartAdd
+INFO 2022-02-15 04:35:15,816 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:35:15,824 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:35:15,894 basehttp "GET /cart/ HTTP/1.1" 200 3068
+INFO 2022-02-15 04:35:33,079 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:34,579 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:34,703 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:39,200 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:39,349 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:43,364 basehttp "GET /account/ HTTP/1.1" 200 1817
+INFO 2022-02-15 04:35:49,548 basehttp "GET /account_topup HTTP/1.1" 301 0
+INFO 2022-02-15 04:35:49,566 basehttp "GET /account_topup/ HTTP/1.1" 200 1577
+WARNING 2022-02-15 04:35:49,707 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:35:49,707 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:36:49,597 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:36:50,934 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:37:04,014 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:37:04,959 basehttp "GET /good/6b50c798-56be-4466-af98-e7bcda2abf8e HTTP/1.1" 301 0
+INFO 2022-02-15 04:37:04,990 basehttp "GET /good/6b50c798-56be-4466-af98-e7bcda2abf8e/ HTTP/1.1" 200 2369
+WARNING 2022-02-15 04:37:05,097 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:37:05,097 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:37:13,142 views CartAdd
+INFO 2022-02-15 04:37:13,145 basehttp "POST /good/6b50c798-56be-4466-af98-e7bcda2abf8e/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:37:13,151 basehttp "GET /good/6b50c798-56be-4466-af98-e7bcda2abf8e HTTP/1.1" 301 0
+INFO 2022-02-15 04:37:13,170 basehttp "GET /good/6b50c798-56be-4466-af98-e7bcda2abf8e/ HTTP/1.1" 200 2530
+INFO 2022-02-15 04:37:24,580 views CartAdd
+INFO 2022-02-15 04:37:24,585 views CartAdd success
+INFO 2022-02-15 04:37:24,589 basehttp "POST /good/6b50c798-56be-4466-af98-e7bcda2abf8e/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:37:24,595 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:37:24,647 basehttp "GET /cart/ HTTP/1.1" 200 3310
+INFO 2022-02-15 04:38:01,285 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:38:02,615 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:41:16,181 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:41:16,706 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:46:33,029 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:46:34,756 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:46:49,876 basehttp "GET /cart/ HTTP/1.1" 200 3310
+INFO 2022-02-15 04:46:51,263 views Placeorder init
+INFO 2022-02-15 04:46:51,274 views Bonuses are writen-off
+INFO 2022-02-15 04:46:51,279 views Placeorder success
+INFO 2022-02-15 04:46:51,284 basehttp "POST /cart/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:46:51,290 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:46:51,339 basehttp "GET /account/ HTTP/1.1" 200 1976
+INFO 2022-02-15 04:47:05,031 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:47:07,603 basehttp "GET /account/ HTTP/1.1" 200 1976
+INFO 2022-02-15 04:47:10,476 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:47:11,573 basehttp "GET /good/6b50c798-56be-4466-af98-e7bcda2abf8e/ HTTP/1.1" 200 2369
+INFO 2022-02-15 04:47:15,820 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:47:16,774 basehttp "GET /good/40d6d887-c1a9-4b6d-a800-2dbe513baeb3 HTTP/1.1" 301 0
+INFO 2022-02-15 04:47:16,794 basehttp "GET /good/40d6d887-c1a9-4b6d-a800-2dbe513baeb3/ HTTP/1.1" 200 2364
+WARNING 2022-02-15 04:47:16,884 log Not Found: /favicon.ico
+WARNING 2022-02-15 04:47:16,885 basehttp "GET /favicon.ico HTTP/1.1" 404 3680
+INFO 2022-02-15 04:47:18,074 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:47:20,402 basehttp "GET /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 200 2365
+INFO 2022-02-15 04:47:25,250 views CartAdd init
+INFO 2022-02-15 04:47:25,253 views CartAdd success
+INFO 2022-02-15 04:47:25,257 basehttp "POST /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:47:25,265 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:47:25,287 basehttp "GET /cart/ HTTP/1.1" 200 2093
+INFO 2022-02-15 04:47:27,000 views Placeorder init
+INFO 2022-02-15 04:47:27,005 views Bonuses are writen-off
+INFO 2022-02-15 04:47:27,010 views New loyalty status: Friend
+INFO 2022-02-15 04:47:27,010 views Placeorder success
+INFO 2022-02-15 04:47:27,014 basehttp "POST /cart/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:47:27,021 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:47:27,044 basehttp "GET /account/ HTTP/1.1" 200 2084
+INFO 2022-02-15 04:48:26,919 basehttp "GET /account/ HTTP/1.1" 200 2084
+INFO 2022-02-15 04:48:29,498 basehttp "GET /account/ HTTP/1.1" 200 2084
+INFO 2022-02-15 04:48:29,899 basehttp "GET /logout/ HTTP/1.1" 200 998
+INFO 2022-02-15 04:48:30,551 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-15 04:48:36,345 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:48:36,351 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:48:36,370 basehttp "GET /account/ HTTP/1.1" 200 1320
+INFO 2022-02-15 04:50:14,419 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 04:50:15,099 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:50:16,961 basehttp "GET /account/ HTTP/1.1" 200 1320
+INFO 2022-02-15 04:50:18,065 basehttp "GET /account_topup/ HTTP/1.1" 200 1574
+INFO 2022-02-15 04:50:21,703 views Bonus balance is topped up
+INFO 2022-02-15 04:50:21,704 basehttp "POST /account_topup/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:50:21,710 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:50:21,728 basehttp "GET /account/ HTTP/1.1" 200 1323
+INFO 2022-02-15 04:52:18,809 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:52:20,516 basehttp "GET /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 200 2365
+INFO 2022-02-15 04:52:23,790 views CartAdd init
+INFO 2022-02-15 04:52:23,793 views CartAdd success
+INFO 2022-02-15 04:52:23,798 basehttp "POST /good/974602bb-cf60-4846-bd23-00d132876d18/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:52:23,805 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:52:23,826 basehttp "GET /cart/ HTTP/1.1" 200 2093
+INFO 2022-02-15 04:52:25,026 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:52:26,000 basehttp "GET /good/0300e79f-0c0b-436e-8668-38a168f82c5e/ HTTP/1.1" 200 2355
+INFO 2022-02-15 04:52:28,772 views CartAdd init
+INFO 2022-02-15 04:52:28,777 views CartAdd success
+INFO 2022-02-15 04:52:28,780 basehttp "POST /good/0300e79f-0c0b-436e-8668-38a168f82c5e/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:52:28,787 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:52:28,827 basehttp "GET /cart/ HTTP/1.1" 200 2326
+INFO 2022-02-15 04:52:30,232 views Placeorder init
+INFO 2022-02-15 04:52:30,237 views Bonuses are writen-off
+INFO 2022-02-15 04:52:30,242 views Placeorder success
+INFO 2022-02-15 04:52:30,246 basehttp "POST /cart/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:52:30,252 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:52:30,271 basehttp "GET /account/ HTTP/1.1" 200 1544
+INFO 2022-02-15 04:53:07,145 basehttp "GET /showcase/ HTTP/1.1" 200 7418
+INFO 2022-02-15 04:53:11,257 basehttp "GET /good/21963066-f84b-4151-8ac9-a0461b84c4d0/ HTTP/1.1" 200 2375
+INFO 2022-02-15 04:53:15,139 views CartAdd init
+INFO 2022-02-15 04:53:15,142 views CartAdd success
+INFO 2022-02-15 04:53:15,147 basehttp "POST /good/21963066-f84b-4151-8ac9-a0461b84c4d0/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:53:15,153 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 04:53:15,178 basehttp "GET /cart/ HTTP/1.1" 200 2107
+INFO 2022-02-15 04:53:16,610 views Placeorder init
+INFO 2022-02-15 04:53:16,614 views Bonuses are writen-off
+INFO 2022-02-15 04:53:16,619 views New loyalty status: Friend
+INFO 2022-02-15 04:53:16,620 views Placeorder success
+INFO 2022-02-15 04:53:16,624 basehttp "POST /cart/ HTTP/1.1" 302 0
+INFO 2022-02-15 04:53:16,630 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 04:53:16,656 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:53:51,534 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 04:53:52,416 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:53:52,429 views User logged in
+INFO 2022-02-15 04:53:56,283 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:53:57,421 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:54:05,827 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:54:09,906 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:54:20,607 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:54:21,225 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:54:21,237 views User logged in
+INFO 2022-02-15 04:55:44,452 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 04:55:45,449 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:55:47,350 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:55:54,218 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 04:55:54,908 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 04:56:00,489 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:56:03,834 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 04:56:07,520 basehttp "GET /logout/ HTTP/1.1" 200 998
+INFO 2022-02-15 04:56:08,511 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-15 04:56:13,776 views User logged in
+ERROR 2022-02-15 04:56:13,847 log Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'NoneType' object has no attribute 'has_header'
+ERROR 2022-02-15 04:56:13,849 basehttp "POST /login/ HTTP/1.1" 500 101092
+INFO 2022-02-15 05:03:41,675 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:03:43,965 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:03:43,985 views User logged in
+INFO 2022-02-15 05:03:55,656 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py changed, reloading.
+INFO 2022-02-15 05:03:56,552 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:03:56,560 views User logged in
+INFO 2022-02-15 05:04:07,252 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-15 05:04:13,380 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 05:04:13,386 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 05:04:13,413 basehttp "GET /account/ HTTP/1.1" 200 1653
+ERROR 2022-02-15 05:19:45,532 log Internal Server Error: /account/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py", line 64, in get
+    orders_list = Order.objects.filter(user_id=user).prefetch_related('article').select_related('status').all()
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2022-02-15 05:19:45,540 basehttp "GET /account/ HTTP/1.1" 500 121728
+INFO 2022-02-15 05:24:54,061 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:24:55,595 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:24:55,620 views User logged in
+INFO 2022-02-15 05:25:07,130 basehttp "GET /logout/ HTTP/1.1" 200 998
+INFO 2022-02-15 05:25:08,014 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-15 05:25:14,563 basehttp "GET /showcase/ HTTP/1.1" 200 7269
+INFO 2022-02-15 05:25:20,801 basehttp "GET /login/ HTTP/1.1" 200 1729
+INFO 2022-02-15 05:25:25,938 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 05:25:25,946 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 05:25:25,983 basehttp "GET /account/ HTTP/1.1" 200 1653
+INFO 2022-02-15 05:27:46,816 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/urls.py changed, reloading.
+INFO 2022-02-15 05:27:48,766 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:27:48,981 views User logged in
+INFO 2022-02-15 05:28:11,966 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 05:28:12,476 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:29:02,653 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 05:29:03,190 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:29:06,598 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 05:29:07,062 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:29:11,503 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 05:29:11,966 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:29:37,648 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:29:51,706 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:30:35,550 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 05:30:37,104 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:30:37,118 views User logged in
+INFO 2022-02-15 05:30:49,576 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 05:30:49,627 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2022-02-15 05:30:49,628 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+INFO 2022-02-15 05:30:49,641 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+INFO 2022-02-15 05:30:49,657 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+INFO 2022-02-15 05:30:52,851 basehttp "GET /__debug__/render_panel/?store_id=bb8913f8d17544018d13a868e8327412&panel_id=SQLPanel HTTP/1.1" 200 118374
+INFO 2022-02-15 05:31:11,945 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 05:31:14,863 basehttp "GET /good/8256029b-8afa-4fc0-a840-e4da3896cb68/ HTTP/1.1" 200 12539
+INFO 2022-02-15 05:31:21,293 basehttp "GET /__debug__/render_panel/?store_id=3dfc9bc3c0c0410287cb83626cc33165&panel_id=SQLPanel HTTP/1.1" 200 78070
+INFO 2022-02-15 05:31:49,263 basehttp "GET /__debug__/render_panel/?store_id=3dfc9bc3c0c0410287cb83626cc33165&panel_id=TemplatesPanel HTTP/1.1" 200 6571
+INFO 2022-02-15 05:31:54,767 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 05:31:56,512 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 05:31:57,846 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 05:32:00,542 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 05:32:04,114 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=TemplatesPanel HTTP/1.1" 200 6741
+INFO 2022-02-15 05:32:46,584 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=CachePanel HTTP/1.1" 200 1348
+INFO 2022-02-15 05:32:49,326 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=SignalsPanel HTTP/1.1" 200 2122
+INFO 2022-02-15 05:32:58,010 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=StaticFilesPanel HTTP/1.1" 200 44135
+INFO 2022-02-15 05:33:13,855 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=HeadersPanel HTTP/1.1" 200 3387
+INFO 2022-02-15 05:33:22,128 basehttp "GET /__debug__/render_panel/?store_id=390257bbe7e048d3ace1431232fd2a39&panel_id=TimerPanel HTTP/1.1" 200 1375
+INFO 2022-02-15 05:33:22,134 basehttp "GET /static/debug_toolbar/js/timer.js HTTP/1.1" 200 3395
+INFO 2022-02-15 05:33:36,374 basehttp "GET /showcase/ HTTP/1.1" 200 17273
+INFO 2022-02-15 05:33:39,068 basehttp "GET /__debug__/render_panel/?store_id=f4f607c36fcc4a1e9f199d5968a79a0b&panel_id=TimerPanel HTTP/1.1" 200 1378
+INFO 2022-02-15 05:34:00,956 basehttp "GET /__debug__/render_panel/?store_id=f4f607c36fcc4a1e9f199d5968a79a0b&panel_id=SQLPanel HTTP/1.1" 200 22740
+INFO 2022-02-15 05:42:21,208 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 05:42:24,812 basehttp "GET /__debug__/render_panel/?store_id=32a49323b1044bdfa4078aa7475adaf5&panel_id=RequestPanel HTTP/1.1" 200 1656
+INFO 2022-02-15 05:42:33,845 basehttp "GET /__debug__/render_panel/?store_id=32a49323b1044bdfa4078aa7475adaf5&panel_id=HeadersPanel HTTP/1.1" 200 3389
+INFO 2022-02-15 05:42:34,578 basehttp "GET /__debug__/render_panel/?store_id=32a49323b1044bdfa4078aa7475adaf5&panel_id=SettingsPanel HTTP/1.1" 200 26238
+INFO 2022-02-15 05:42:51,567 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 05:42:51,573 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 05:42:51,848 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 05:42:55,577 basehttp "GET /__debug__/render_panel/?store_id=e42dcb3cc0274559a0b64fcd800ffa9f&panel_id=HistoryPanel HTTP/1.1" 200 18168
+INFO 2022-02-15 05:42:55,585 basehttp "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 1915
+INFO 2022-02-15 05:43:06,762 basehttp "GET /__debug__/history_sidebar/?signed=%7B%22store_id%22%3A+%2237e5ad6ddaa84c00992b287bda6156bb%22%7D%3Asn9-L49uoRtHcKrrazMhShIeya6b2RkvzDc6IUdnvaI HTTP/1.1" 200 9118
+INFO 2022-02-15 05:43:08,170 basehttp "GET /__debug__/history_sidebar/?signed=%7B%22store_id%22%3A+%2237e5ad6ddaa84c00992b287bda6156bb%22%7D%3Asn9-L49uoRtHcKrrazMhShIeya6b2RkvzDc6IUdnvaI HTTP/1.1" 200 9118
+INFO 2022-02-15 05:43:08,757 basehttp "GET /__debug__/history_sidebar/?signed=%7B%22store_id%22%3A+%2237e5ad6ddaa84c00992b287bda6156bb%22%7D%3Asn9-L49uoRtHcKrrazMhShIeya6b2RkvzDc6IUdnvaI HTTP/1.1" 200 9118
+INFO 2022-02-15 05:43:10,751 basehttp "GET /__debug__/history_sidebar/?signed=%7B%22store_id%22%3A+%22e42dcb3cc0274559a0b64fcd800ffa9f%22%7D%3AU3lFW894VG0zKM4F8YuVWLNezbaTICbAEJK00A_84gA HTTP/1.1" 200 9160
+INFO 2022-02-15 05:43:12,117 basehttp "GET /__debug__/history_sidebar/?signed=%7B%22store_id%22%3A+%2237e5ad6ddaa84c00992b287bda6156bb%22%7D%3Asn9-L49uoRtHcKrrazMhShIeya6b2RkvzDc6IUdnvaI HTTP/1.1" 200 9118
+INFO 2022-02-15 05:44:58,757 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:45:00,896 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:45:54,959 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:45:56,734 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:46:07,392 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:46:09,127 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:46:16,571 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:46:18,300 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:46:22,630 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:46:23,447 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:46:44,601 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:46:46,168 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:47:23,766 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:47:24,423 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:47:29,868 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:47:30,573 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:47:41,081 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:47:41,820 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:47:58,470 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:47:59,465 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:48:46,927 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:48:47,863 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:52:10,901 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:52:12,964 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:52:20,614 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:52:21,370 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:52:39,406 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:52:41,153 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:52:44,568 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:52:45,423 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:53:01,081 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:53:01,819 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:53:12,377 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:53:13,379 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:53:43,433 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:53:44,165 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:53:50,843 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:53:51,672 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:53:55,049 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:53:55,717 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:54:07,290 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:54:08,033 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:54:12,353 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:54:13,083 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:54:27,682 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:54:28,525 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:57:46,535 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:57:48,525 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:57:52,930 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:57:53,889 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:58:06,238 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 05:58:07,387 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 05:58:11,975 basehttp "GET /login/ HTTP/1.1" 200 11721
+ERROR 2022-02-15 05:58:16,361 log Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py", line 56, in post
+    print(super(LoginView, self).post())
+TypeError: post() missing 1 required positional argument: 'request'
+ERROR 2022-02-15 05:58:16,401 basehttp "POST /login/ HTTP/1.1" 500 117253
+INFO 2022-02-15 05:58:46,237 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:58:48,347 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:58:49,984 basehttp "GET /login/ HTTP/1.1" 200 11721
+ERROR 2022-02-15 05:58:52,056 log Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/contrib/auth/views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py", line 55, in post
+    super(LoginView, self).post()
+TypeError: post() missing 1 required positional argument: 'request'
+ERROR 2022-02-15 05:58:52,099 basehttp "POST /login/ HTTP/1.1" 500 117285
+INFO 2022-02-15 05:59:21,335 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 05:59:23,124 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 05:59:27,478 basehttp "GET /login/ HTTP/1.1" 200 11721
+ERROR 2022-02-15 05:59:31,524 log Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 45, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'NoneType' object has no attribute 'has_header'
+ERROR 2022-02-15 05:59:31,599 basehttp "POST /login/ HTTP/1.1" 500 111357
+INFO 2022-02-15 16:15:45,316 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:15:47,929 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:15:54,466 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:15:56,055 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:16:02,658 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:16:04,044 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:19:31,909 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:19:33,700 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:19:40,274 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:19:42,155 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:19:42,170 basehttp "GET /static/css/header/style.css HTTP/1.1" 304 0
+INFO 2022-02-15 16:19:43,100 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:19:43,431 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:19:43,632 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:19:46,420 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:19:46,432 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 16:19:46,689 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:19:59,467 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:20:01,145 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:20:12,155 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:20:16,812 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:20:24,046 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:20:26,892 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:20:30,806 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:20:31,850 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:20:40,936 views User logged in
+INFO 2022-02-15 16:20:40,993 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:20:40,999 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 16:20:41,281 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:21:01,500 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:21:02,976 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:21:19,799 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:21:20,589 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:21:25,521 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:21:30,711 views User logged in
+INFO 2022-02-15 16:21:30,903 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:21:30,909 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 16:21:31,129 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:21:35,126 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:21:47,371 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:21:48,970 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:21:51,603 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-15 16:21:53,073 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:22:03,180 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:22:06,598 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:22:07,620 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:22:08,590 basehttp "GET /account/ HTTP/1.1" 200 11651
+INFO 2022-02-15 16:22:11,977 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:22:14,543 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:22:17,124 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:22:20,412 basehttp "GET /showcase/ HTTP/1.1" 200 17273
+INFO 2022-02-15 16:22:22,017 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-15 16:22:27,040 views User logged in
+INFO 2022-02-15 16:22:27,097 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:22:27,103 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-15 16:22:27,370 basehttp "GET /account/ HTTP/1.1" 200 11318
+INFO 2022-02-15 16:32:01,766 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 16:32:04,811 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:33:30,267 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/settings.py changed, reloading.
+INFO 2022-02-15 16:33:32,958 autoreload Watching for file changes with StatReloader
+INFO 2022-02-15 16:33:52,312 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/urls.py changed, reloading.
+INFO 2022-02-15 16:33:54,275 autoreload Watching for file changes with StatReloader
+WARNING 2022-02-15 16:34:01,032 log Not Found: /
+WARNING 2022-02-15 16:34:01,040 basehttp "GET / HTTP/1.1" 404 13808
+INFO 2022-02-15 16:34:01,850 basehttp - Broken pipe from ('127.0.0.1', 57188)
+
+INFO 2022-02-15 16:34:02,181 basehttp - Broken pipe from ('127.0.0.1', 57186)
+
+INFO 2022-02-15 16:34:02,318 basehttp - Broken pipe from ('127.0.0.1', 57185)
+
+INFO 2022-02-15 16:34:05,203 basehttp "GET /sentry-debug HTTP/1.1" 301 0
+ERROR 2022-02-15 16:34:05,353 log Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/sentry_sdk/integrations/django/views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/urls.py", line 22, in trigger_error
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+ERROR 2022-02-15 16:34:05,423 basehttp "GET /sentry-debug/ HTTP/1.1" 500 75784
+WARNING 2022-02-15 16:34:05,763 log Not Found: /favicon.ico
+WARNING 2022-02-15 16:34:05,774 basehttp "GET /favicon.ico HTTP/1.1" 404 13868
+ERROR 2022-02-15 16:38:30,996 log Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/sentry_sdk/integrations/django/views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/djmarketplace/urls.py", line 22, in trigger_error
+    division_by_zero = 1 / 0
+ZeroDivisionError: division by zero
+ERROR 2022-02-15 16:38:31,116 basehttp "GET /sentry-debug/ HTTP/1.1" 500 75784
+INFO 2022-02-15 16:38:32,273 basehttp - Broken pipe from ('127.0.0.1', 57365)
+
+WARNING 2022-02-15 16:38:32,293 log Not Found: /
+WARNING 2022-02-15 16:38:32,298 basehttp "GET / HTTP/1.1" 404 13806
+WARNING 2022-02-15 16:38:34,385 log Not Found: /
+WARNING 2022-02-15 16:38:34,389 basehttp "GET / HTTP/1.1" 404 13806
+INFO 2022-02-15 16:38:35,472 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:38:44,366 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12537
+INFO 2022-02-15 16:38:46,342 views CartAdd init
+INFO 2022-02-15 16:38:46,460 views CartAdd success
+INFO 2022-02-15 16:38:46,588 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:38:46,595 basehttp "GET /cart HTTP/1.1" 301 0
+INFO 2022-02-15 16:38:46,816 basehttp "GET /cart/ HTTP/1.1" 200 12091
+INFO 2022-02-15 16:38:46,835 basehttp "GET /static/css/app_storage/cart/style.css HTTP/1.1" 304 0
+INFO 2022-02-15 16:38:49,032 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:38:49,819 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12537
+INFO 2022-02-15 16:38:53,415 views CartAdd init
+INFO 2022-02-15 16:38:53,519 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 302 0
+INFO 2022-02-15 16:38:53,534 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d HTTP/1.1" 301 0
+INFO 2022-02-15 16:38:53,751 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12699
+INFO 2022-02-15 16:40:44,007 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12537
+INFO 2022-02-15 16:40:44,651 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12537
+INFO 2022-02-15 16:40:44,908 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12537
+INFO 2022-02-15 16:41:07,417 basehttp "GET /account/ HTTP/1.1" 200 11417
+INFO 2022-02-15 16:41:08,253 basehttp "GET /showcase/ HTTP/1.1" 200 17426
+INFO 2022-02-15 16:42:21,765 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-15 16:42:23,208 basehttp "GET /showcase/ HTTP/1.1" 200 17274
+INFO 2022-02-15 16:42:24,162 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12388
+ERROR 2022-02-15 16:42:26,860 log Internal Server Error: /good/2f30b718-92df-462e-ae1c-276adb41536d/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/sentry_sdk/integrations/django/views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py", line 37, in post
+    cart = Cart.objects.filter(user=user).select_related('article').all()
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2022-02-15 16:42:26,996 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 500 134579
+ERROR 2022-02-15 16:43:36,928 log Internal Server Error: /good/2f30b718-92df-462e-ae1c-276adb41536d/
+Traceback (most recent call last):
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/sentry_sdk/integrations/django/views.py", line 67, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_storage/views.py", line 37, in post
+    cart = Cart.objects.filter(user=user).select_related('article').all()
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2022-02-15 16:43:37,070 basehttp "POST /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 500 134579
+INFO 2022-02-15 16:47:33,370 basehttp "GET /good/2f30b718-92df-462e-ae1c-276adb41536d/ HTTP/1.1" 200 12388
+INFO 2022-02-15 16:47:34,897 basehttp "GET /showcase/ HTTP/1.1" 200 17693
+INFO 2022-02-15 16:47:38,782 basehttp "GET /showcase/ HTTP/1.1" 200 17693
+INFO 2022-02-15 16:48:20,568 basehttp "GET /showcase/ HTTP/1.1" 200 18113
+INFO 2022-02-15 16:48:22,434 basehttp "GET /showcase/ HTTP/1.1" 200 18113
+INFO 2022-02-15 16:48:22,657 basehttp "GET /showcase/ HTTP/1.1" 200 18113
+INFO 2022-02-15 16:48:22,802 basehttp "GET /showcase/ HTTP/1.1" 200 18113
+INFO 2022-02-15 16:51:22,355 basehttp "GET /showcase/ HTTP/1.1" 200 215515
+INFO 2022-02-15 16:52:37,855 basehttp "GET /showcase/ HTTP/1.1" 200 1278115
+INFO 2022-02-15 16:52:40,167 basehttp "GET /__debug__/render_panel/?store_id=d7ce51eeaf6e451f9313953de72c65f3&panel_id=SQLPanel HTTP/1.1" 200 31537
+INFO 2022-02-15 16:52:48,292 basehttp "GET /showcase/ HTTP/1.1" 200 1278115
+INFO 2022-02-16 16:58:02,118 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:05:08,563 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:05:09,816 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:06:16,712 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:06:17,897 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:07:21,855 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:07:22,813 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:07:46,247 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:07:47,110 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:07:53,915 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:07:54,973 autoreload Watching for file changes with StatReloader
+WARNING 2022-02-16 17:08:18,471 log Not Found: /
+WARNING 2022-02-16 17:08:18,475 basehttp "GET / HTTP/1.1" 404 13806
+INFO 2022-02-16 17:08:18,567 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2022-02-16 17:08:18,568 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2022-02-16 17:08:18,578 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2022-02-16 17:08:18,627 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2022-02-16 17:08:20,831 log Not Found: /
+WARNING 2022-02-16 17:08:20,837 basehttp "GET / HTTP/1.1" 404 13806
+INFO 2022-02-16 17:08:22,544 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-16 17:08:27,783 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-16 17:08:32,410 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-16 17:08:32,723 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-16 17:08:37,197 views User logged in
+INFO 2022-02-16 17:08:37,269 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-16 17:08:37,278 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-16 17:08:37,609 basehttp "GET /account/ HTTP/1.1" 200 11418
+INFO 2022-02-16 17:08:44,239 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-16 17:08:46,887 basehttp "GET /showcase/ HTTP/1.1" 200 1278115
+INFO 2022-02-16 17:13:29,880 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/__init__.py changed, reloading.
+INFO 2022-02-16 17:13:31,443 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:15:20,425 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/__init__.py changed, reloading.
+INFO 2022-02-16 17:15:22,603 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:15:25,597 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/apps.py changed, reloading.
+INFO 2022-02-16 17:15:27,037 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:15:43,569 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:15:44,589 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:16:24,475 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:16:25,402 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:16:31,816 basehttp "GET /login/ HTTP/1.1" 200 11721
+INFO 2022-02-16 17:16:35,612 views User logged in
+INFO 2022-02-16 17:16:35,685 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-02-16 17:16:35,693 basehttp "GET /account HTTP/1.1" 301 0
+INFO 2022-02-16 17:16:36,002 basehttp "GET /account/ HTTP/1.1" 200 11417
+INFO 2022-02-16 17:16:56,146 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-16 17:17:35,843 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:17:36,859 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:17:36,882 views <module 'django.db.models.signals' from '/Users/paulpolz/Desktop/Курс по Django/python_django/django_projects_venv/lib/python3.9/site-packages/django/db/models/signals.py'>
+INFO 2022-02-16 17:17:39,228 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-16 17:18:00,754 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:18:01,946 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:18:01,963 views <function signal at 0x7fa5ad267670>
+INFO 2022-02-16 17:18:04,566 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-16 17:20:55,091 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:20:57,474 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:20:57,496 views <class 'django.db.models.signals.ModelSignal'>
+INFO 2022-02-16 17:21:01,296 basehttp "GET /logout/ HTTP/1.1" 200 10993
+INFO 2022-02-16 17:21:38,254 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:21:39,162 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:22:07,685 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/apps.py changed, reloading.
+INFO 2022-02-16 17:22:08,657 autoreload Watching for file changes with StatReloader
+INFO 2022-02-16 17:22:38,304 autoreload /Users/paulpolz/Desktop/Курс по Django/python_django/16_LoggingAndProfiling/djmarketplace/app_users/views.py changed, reloading.
+INFO 2022-02-16 17:22:39,179 autoreload Watching for file changes with StatReloader

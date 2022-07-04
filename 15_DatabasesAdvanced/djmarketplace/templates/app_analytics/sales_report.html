@@ -1,0 +1,46 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/app_analytics/sales_report/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>Sales report</title>
+{% endblock %}
+</head>
+{% block main %}
+<main class="main">
+    <div class="main__report report">
+        <table class="item__table">
+            <caption class="item__table-caption">
+                Top 100 the most sold items
+            </caption>
+            <tr class="item__table-cols">
+                <th>Article ID</th>
+                <th>Good Name</th>
+                <th>Quantity</th>
+            </tr>
+            {% for item in sales_top %}
+            <tr class="item__table-rows">
+                <td>{{ item.article }}</td>
+                <td>{{ item.article__good__good_name }}</td>
+                <td>{{ item.sales }} pcs.</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <form method="POST" action="" class="main__form form">
+        <div class="form__input">
+        {% csrf_token %}
+        {% for field in sales_report_date_filter %}
+            <div class="form__input-field">
+            {{ field.label }}
+            {{ field }}
+            </div>
+        {% endfor %}
+        </div>
+        <button type="submit" class="form__submit">
+            Calculate report
+        </button>
+    </form>
+</main>
+{% endblock %}

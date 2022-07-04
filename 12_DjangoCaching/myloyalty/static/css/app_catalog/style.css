@@ -1,0 +1,48 @@
+/* Main */
+.main {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+}
+
+/* Store List */
+.main__stores {
+    position: absolute;
+
+    margin-top: 5%;
+    margin-left: 5%;
+
+    width: 50%;
+
+    /* min-height: 144px; */
+    min-width: 500px;
+
+    background: #f3f2ef;
+    border-radius: 18px;
+
+    box-shadow: 0 0 5px 1px rgba(122,122,122,0.5);
+}
+
+.main__stores-h {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.main__stores-list {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.stores-list__item {
+    display: flex;
+    margin-bottom: 0.5%;
+}
+
+.list-item__city {
+    margin-left: 2%;
+
+    font-size: 16px;
+    color: rgba(122,122,122, 0.8)
+}

@@ -1,0 +1,14 @@
+.main {
+    margin-left: 40px;
+}
+
+.main__to-feeds {
+    margin-top: 20px;
+    padding: 10px 20px;
+    max-width: 100px;
+
+    font-weight: 600;
+    border: 0.5px solid rgb(161, 161, 161);
+    border-radius: 6px;
+    background-color: white;
+}

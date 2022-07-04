@@ -1,0 +1,26 @@
+{% extends '../header/header.html' %}
+{% load i18n %}
+{% block title %}
+<title>{% trans 'Login'%}</title>
+{% endblock %}
+{% block main %}
+<main class="main">
+    <div class="main__container container">
+        <h2 class="container__header">
+            {% trans 'Sign In'%}
+        </h2>
+        <form method="post" class="container__form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="container__form-btn">
+                <button type="submit" class="form-btn">
+                    {% trans 'Sign In'%}
+                </button>
+                <p class="form-btn">
+                    <a href="/register">{% trans 'Sign Up'%}</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock %}

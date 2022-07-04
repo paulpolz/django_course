@@ -1,0 +1,35 @@
+.main__header {
+    margin-left: 40px;
+
+    font-family: "Graphic", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(68, 65, 65)
+}
+
+.main__form {
+    margin-left: 40px;
+
+    max-width: 300px;
+}
+
+.main__form-form1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form-form2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form-submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+
+    font-weight: 600;
+
+    border: 0.5px solid rgb(161, 161, 161);
+    border-radius: 6px;
+    background-color: white;
+}

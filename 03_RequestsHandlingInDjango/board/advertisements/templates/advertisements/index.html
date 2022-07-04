@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisements</title>
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/main/style.css'%}" type="text/css">
+</head>
+  <body>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+        <div class="form__block">
+          <label class="form__block-label">
+            Категории
+          </label>
+          <select name="category" class="form__block-select">
+            {% for category in categories %}
+            <option>
+                {{ category }}
+            </option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form__block">
+          <label class="form__block-label">
+            Регион
+          </label>
+          <select name="region" class="form__block-select">
+            {% for region in regions %}
+            <option>
+                {{ region }}
+            </option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form__block">
+          <label class="form__block-label">
+            Найти объявление
+          </label>
+          <input type="text" placeholder="Репетитор" class="form__block-search">
+        </div>
+        <button type="submit" class="form__button">
+          Найти
+        </button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: "Graphic", sans-serif;
+    background-color: rgb(230, 200, 84);
+}
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 200px 40px 0px 40px;
+
+    padding: 50px 30px;
+
+    border: 1px rgb(230, 200, 84) solid;
+    border-radius: 18px;
+    background-color: rgb(228, 188, 30);
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form__block-label {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.form__block-select {
+    background: none;
+}
+
+.form__block-search {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.877);
+}
+
+::-webkit-input-placeholder { 
+    color: rgba(0, 0, 0, 0.568); 
+}
+
+::-moz-placeholder { 
+    color: rgba(0, 0, 0, 0.568); 
+}
+
+:-ms-input-placeholder { 
+    color: rgba(0, 0, 0, 0.568); 
+}
+
+.form__button {
+    border: 1px rgb(230, 200, 84) solid;
+    border-radius: 15px;
+
+    padding: 12px 24px;
+
+    background-color: rgb(230, 200, 84);
+
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+
+    transition: background-color .5s ease-out;
+}
+
+.form__button:hover {
+    background-color: cornsilk;
+}

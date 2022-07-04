@@ -1,0 +1,62 @@
+[
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "1df3b287-cca0-4bf9-b6c6-e178f941220c",
+        "fields": {
+            "parameter_name": "До метро",
+            "parameter_value": "Транспортом",
+            "created_at": "2022-02-20T18:42:36.265Z",
+            "updated_at": "2022-02-20T18:42:36.266Z"
+        }
+    },
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "6754ed3b-5f52-4b1f-94c0-fd12efb4d505",
+        "fields": {
+            "parameter_name": "Санузел",
+            "parameter_value": "Совмещенный",
+            "created_at": "2022-02-20T18:42:49.164Z",
+            "updated_at": "2022-02-20T18:42:49.164Z"
+        }
+    },
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "6f15ddbd-038f-40e7-bb13-626faf822f23",
+        "fields": {
+            "parameter_name": "Условия сделки",
+            "parameter_value": "Продажа",
+            "created_at": "2022-02-20T18:41:52.475Z",
+            "updated_at": "2022-02-20T18:41:52.475Z"
+        }
+    },
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "9ceb7c9a-1b2a-48bd-98c8-ed205e9d56eb",
+        "fields": {
+            "parameter_name": "Санузел",
+            "parameter_value": "Раздельный",
+            "created_at": "2022-02-20T18:42:58.371Z",
+            "updated_at": "2022-02-20T18:42:58.371Z"
+        }
+    },
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "c316655b-c1b7-4af0-8944-acf532db136d",
+        "fields": {
+            "parameter_name": "До метро",
+            "parameter_value": "Пешком",
+            "created_at": "2022-02-20T18:42:20.751Z",
+            "updated_at": "2022-02-20T18:42:20.751Z"
+        }
+    },
+    {
+        "model": "app_estate.propertyparameter",
+        "pk": "f2c2f3a6-b5ee-460f-a3ce-6eeec26a5130",
+        "fields": {
+            "parameter_name": "Условия сделки",
+            "parameter_value": "Аренда",
+            "created_at": "2022-02-20T18:42:04.458Z",
+            "updated_at": "2022-02-20T18:42:04.458Z"
+        }
+    }
+]

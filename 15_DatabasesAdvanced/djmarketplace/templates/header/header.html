@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+    {% block style %} 
+    {% endblock %}
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h">
+            <a href="/showcase">
+                DJ Marketplace
+            </a>
+        </h1>
+        <div class="header__auth">
+            {% if request.user.is_authenticated %}
+            <button class="header__auth-login auth">
+                <a href="/account" class="auth__link"></a>
+            </button>
+            {% endif %}
+            {% if request.user.is_authenticated %}
+            <button class="header__auth-logout auth">
+                <a href="/logout" class="auth__link"></a>
+            </button>
+            {% else %}
+            <button class="header__auth-login auth">
+                <a href="/login" class="auth__link"></a>
+            </button>
+            {% endif %}
+        </div>
+    </header>
+    {% block main %}
+    {% endblock %}
+</body>
+</html>

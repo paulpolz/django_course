@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/news_list/style.css'%}" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav-item header__nav-post">
+                <a href="news_list" class="nav-item__logo">
+                    MyNews
+                </a>
+                <button class="nav-item__postbutton">
+                    <a href="news_list/create">
+                        Новая запись
+                    </a>
+                </button>
+            </div>
+            <div class="nav-item header__nav-login">
+                {% if request.user.is_authenticated %}
+                <button class="nav-item__login logout">
+                    <a href="/logout" class="nav-item__login-link"></a>
+                </button>
+                {% else %}
+                <button class="nav-item__login">
+                    <a href="/login" class="nav-item__login-link"></a>
+                </button>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__header">
+            Лента новостей
+        </h1>
+        <form method="POST" class="main__update">
+            {% csrf_token %}
+            <button class="main__update-btn">
+                Обновить ленту
+            </button>
+        </form>
+        {% if news_list %}
+        <ul class="main__news-list">
+            {% for item in news_list %}
+            <li class="item main__news-list-item">
+                <a href="news_detail/{{item.id}}">
+                    <div class="item__params">
+                        <!-- 
+                            рубрика
+                            автор
+                            дата создания
+                        -->
+                    </div>
+                    <h3 class="item__header">
+                        {{ item.title }}
+                    </h3>
+                    <p class="item__text">
+                        {{ item.text|truncatechars:180 }}
+                    </p>
+                    <div class="item__action">
+                        <!-- 
+                            лайк 
+                            комментарий
+                        -->
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif%}
+    </main>
+</body>
+</html>

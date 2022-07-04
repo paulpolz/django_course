@@ -1,0 +1,29 @@
+{% extends '../header/header.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/app_storage/showcase/style.css'%}" type="text/css">
+{% endblock %}
+{% block title %}
+<title>Showcase</title>
+{% endblock %}
+</head>
+{% block main %}
+<main class="main">
+    <div class="main__showcase">
+        <ul class="main__showcase-list showcase_list">
+            {% for good in showcase %}
+            <li class="showcase_list__item">
+                <a href="/good/{{ good.article_id }}">
+                    <div class="showcase_list__item-goodname">
+                        {{ good.good }}
+                    </div>
+                    <div class="showcase_list__item-storename">
+                        {{ good.store }}
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends '../header.html' %}
+{% load i18n %}
+{% load static %}
+
+<title>{% block title %}{% trans 'Главная страница' %}{% endblock %}</title>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/header/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/main/style.css'%}" type="text/css">
+{% endblock %}
+
+{% block main %}
+<main class="main">
+    <h1 class="main__header">
+        {% trans 'Главная страница' %}
+    </h1>
+    {% if request.user.is_authenticated %}
+    <h3>
+        {% trans 'Добро пожаловать' %}, {{ request.user.first_name }}!
+    </h3>
+    {% else %}
+    <h3>
+        {% trans 'Вы не авторизованы на сайте' %}
+    </h3>
+    <div class="main__auth">
+        <p class="main__auth-login">
+            <a href="/users/login">{% trans 'Войти' %}</a>
+        </p>
+        <p class="main__auth-register">
+            <a href="/users/register">{% trans 'Зарегистрироваться' %}</a>
+        </p>
+    </div>
+    {% endif %}
+    <div class="main__to_feeds">
+        <a href="/feeds/list">
+            {% trans 'К новостям' %}
+        </a>
+    </div>
+</main>
+{% endblock %}
